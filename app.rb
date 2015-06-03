@@ -17,8 +17,8 @@ end
   post "/send_sms" do
     puts "post send_sms"
     # @message="password is incorrect.  SMS failed." if settings.send_sms_password != params["password"]
-    @message = "missing phone number.  SMS failed." if params["phone_number"].nil? || params["phone_number"].empty?
-    @message = "missing SMS message.  SMS failed." if params["message"].nil? || params["message"].empty?
+    @message = "Please enter a valid 10-digit phone number.  SMS failed." if params["phone_number"].nil? || params["phone_number"].empty?
+    @message = "Please enter your message in the Message field.  SMS failed." if params["message"].nil? || params["message"].empty?
     #if there's no message then the password matches and we have all of the required info
     if @message.nil?
       puts "sending sms"
