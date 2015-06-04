@@ -6,12 +6,12 @@
     <h1>
       <%= @message unless @message.nil? %>
     </h1>
-    <h5><center>Send SMS</center></h5>
-    <center><form name="sms_form" action="send_sms" method="post"></center>
-      <center>Phone number (10 digits): <input type="text" name="phone_number"></center> <br/>
-      <center>Message: <input type="text" name="message"> <br/></center>
+    <h5>Send SMS</h5>
+    <center><form name="sms_form" action="send_sms" method="post">
+      Phone number (10 digits): <input type="text" name="phone_number"> <br/>
+      Message: <input type="text" name="message"> <br/>
      <!-- Password: <input type="password" name="password"> <br/> -->
-      <center><input type="submit" value="Send SMS"></center>
-    </form>
+      <input type="submit" value="Send SMS">
+    </form></center>
 </body>
 </html>
