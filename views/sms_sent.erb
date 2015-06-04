@@ -2,13 +2,13 @@
 <head>
 </head>
 <body>
-<center/><h3>SMS sent!</h3></center>
+<center/><h2>SMS sent!</h2></center>
 <%= @sms_reply.inspect %>
 
     <h1>
       <%= @message unless @message.nil? %>
     </h1>
-    <center><h4>Send another SMS</h4></center>
+    <center><h3>Send another?</h3></center>
     <center><form name="sms_form" action="send_sms" method="post">
       Please enter 10-digit phone number below: <br><input type="text" name="phone_number"> <br/>
       <br>Enter your message below: <br><input type="text" name="message"> <br/>
