@@ -4,6 +4,7 @@
 <body>
 <h4>SMS sent!</h4>
 <%= @sms_reply.inspect %>
+      <%= @message unless @message.nil? %>
 
    <br><input type="submit" value="Send another message">
 
