@@ -1,12 +1,12 @@
  <html>
 <head>
-
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1>
       <%= @message unless @message.nil? %>
     </h1>
-    <h5>Send SMS</h5>
+    <center><h5>Send SMS</h5></center>
     <center><form name="sms_form" action="send_sms" method="post">
       Phone number (10 digits): <input type="text" name="phone_number"> <br/>
       Message: <input type="text" name="message"> <br/>
